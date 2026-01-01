@@ -30,7 +30,11 @@
 <!-- ================= HEADER ================= -->
 <header class="bg-white border-b sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-primary">UI<span class="text-dark">Generator</span></h1>
+    <div class="flex items-center gap-3">
+      <img src="assets/logo.png" class="h-8" alt="UI Generator Logo">
+      <span class="font-bold text-lg">UI Generator</span>
+    </div>
+
     <nav class="hidden md:flex gap-6 text-sm font-medium">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
@@ -43,12 +47,12 @@
 <!-- ================= HERO ================= -->
 <section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
   <div>
-    <h2 class="text-5xl font-bold text-dark leading-tight">
-      AI-powered <br> frontend UI generator
-    </h2>
+    <h1 class="text-5xl font-bold text-dark leading-tight">
+      AI-powered frontend <br> UI generator
+    </h1>
     <p class="mt-6 text-lg text-slate-600">
       Generate production-ready frontend UI from a simple prompt.
-      No design skills. No builders. Just clean UI.
+      No builders. No design confusion. Just clean UI.
     </p>
 
     <div class="mt-8 flex gap-4">
@@ -62,9 +66,9 @@
   </div>
 
   <img
-    src="https://dummyimage.com/600x400/e5e7eb/111827&text=Generated+UI+Preview"
+    src="assets/hero-ui.png"
     class="rounded-2xl shadow-xl"
-    alt="UI Generator Preview"
+    alt="Generated UI Preview"
   />
 </section>
 
@@ -78,26 +82,32 @@
   <div class="bg-white p-6 rounded-xl shadow-sm">
     <i data-feather="layout" class="text-primary"></i>
     <h4 class="font-semibold text-lg mt-4">Production Ready</h4>
-    <p class="text-slate-600 mt-2">Clean HTML + Tailwind code usable in real projects.</p>
+    <p class="text-slate-600 mt-2">
+      Clean HTML + Tailwind code ready for real projects.
+    </p>
   </div>
 
   <div class="bg-white p-6 rounded-xl shadow-sm">
     <i data-feather="zap" class="text-primary"></i>
     <h4 class="font-semibold text-lg mt-4">Instant Output</h4>
-    <p class="text-slate-600 mt-2">From idea to UI in seconds.</p>
+    <p class="text-slate-600 mt-2">
+      From idea to UI in seconds.
+    </p>
   </div>
 
   <div class="bg-white p-6 rounded-xl shadow-sm">
     <i data-feather="check-circle" class="text-primary"></i>
     <h4 class="font-semibold text-lg mt-4">Opinionated UX</h4>
-    <p class="text-slate-600 mt-2">No guesswork, proven UX patterns.</p>
+    <p class="text-slate-600 mt-2">
+      Proven layouts that actually work.
+    </p>
   </div>
 </section>
 
 <!-- ================= HOW IT WORKS ================= -->
 <section id="how" class="bg-white py-24 border-t">
   <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center text-dark">How it works</h3>
+    <h2 class="text-3xl font-bold text-center text-dark">How it works</h2>
 
     <div class="grid md:grid-cols-3 gap-10 mt-16 text-center">
       <div>
@@ -110,7 +120,7 @@
       </div>
       <div>
         <h4 class="font-semibold">3. Use</h4>
-        <p class="text-slate-600 mt-2">Copy & use the code instantly.</p>
+        <p class="text-slate-600 mt-2">Copy and build instantly.</p>
       </div>
     </div>
   </div>
@@ -119,7 +129,7 @@
 <!-- ================= GENERATOR ================= -->
 <section id="generator" class="py-24">
   <div class="max-w-3xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center text-dark">UI Generator</h3>
+    <h2 class="text-3xl font-bold text-center text-dark">UI Generator</h2>
 
     <div class="mt-10 bg-white p-6 rounded-2xl shadow-md">
       <textarea
@@ -148,7 +158,7 @@
     <div>
       <h3 class="text-3xl font-bold text-dark">Contact</h3>
       <p class="mt-4 text-slate-600">
-        Have feedback, ideas, or want to collaborate?
+        Have feedback or ideas?
       </p>
       <p class="mt-4 text-slate-600">📧 support@uigenerator.dev</p>
     </div>
@@ -166,13 +176,11 @@
 
 <!-- ================= FOOTER ================= -->
 <footer class="bg-slate-900 text-slate-400 py-12 text-center">
-  <p>© 2026 UI Generator. Built by an indie developer.</p>
-  <p class="text-sm mt-2">Privacy • Terms • GitHub</p>
+  <p>© 2026 UI Generator. Built as an indie SaaS.</p>
 </footer>
 
 <script src="app.js"></script>
 <script>feather.replace()</script>
 </body>
 </html>
-
 
