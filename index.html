@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>UI Generator – Production Ready Frontend UI</title>
+  <title>UI Generator – AI Frontend UI Builder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -22,31 +27,33 @@
 
 <body class="bg-slate-50 text-slate-800">
 
-<!-- HEADER -->
-<header class="bg-white border-b">
+<!-- ================= HEADER ================= -->
+<header class="bg-white border-b sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-   <h1 class="text-xl font-bold text-primary">
-  UI<span class="text-dark">Generator</span>
-</h1>
-
-    <span class="text-sm text-slate-500">Beta</span>
+    <h1 class="text-xl font-bold text-primary">UI<span class="text-dark">Generator</span></h1>
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#generator">Generator</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
   <div>
     <h2 class="text-5xl font-bold text-dark leading-tight">
-      Generate production-ready <br> frontend UI in seconds
+      AI-powered <br> frontend UI generator
     </h2>
     <p class="mt-6 text-lg text-slate-600">
-      Stop wasting hours on UI decisions. Describe your idea and instantly get
-      clean, professional, Tailwind-based UI that works in real projects.
+      Generate production-ready frontend UI from a simple prompt.
+      No design skills. No builders. Just clean UI.
     </p>
 
     <div class="mt-8 flex gap-4">
       <a href="#generator" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
-        Try UI Generator
+        Try it free
       </a>
       <a href="#how" class="px-6 py-3 rounded-lg border font-medium">
         How it works
@@ -54,98 +61,78 @@
     </div>
   </div>
 
-  <div class="bg-white rounded-2xl shadow-xl p-8">
-    <p class="text-sm text-slate-500 mb-3">Example Output</p>
-    <div class="border rounded-xl p-5">
-      <h3 class="font-semibold text-lg">Modern SaaS Landing Page</h3>
-      <p class="text-sm text-slate-600 mt-2">
-        Hero section, feature grid, CTA, pricing-ready layout using best UX practices.
-      </p>
+  <img
+    src="https://dummyimage.com/600x400/e5e7eb/111827&text=Generated+UI+Preview"
+    class="rounded-2xl shadow-xl"
+    alt="UI Generator Preview"
+  />
+</section>
+
+<!-- ================= TRUST ================= -->
+<section class="bg-white border-t border-b py-10 text-center text-sm text-slate-500">
+  Trusted by developers, students & early-stage startups
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-3 gap-10">
+  <div class="bg-white p-6 rounded-xl shadow-sm">
+    <i data-feather="layout" class="text-primary"></i>
+    <h4 class="font-semibold text-lg mt-4">Production Ready</h4>
+    <p class="text-slate-600 mt-2">Clean HTML + Tailwind code usable in real projects.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-xl shadow-sm">
+    <i data-feather="zap" class="text-primary"></i>
+    <h4 class="font-semibold text-lg mt-4">Instant Output</h4>
+    <p class="text-slate-600 mt-2">From idea to UI in seconds.</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-xl shadow-sm">
+    <i data-feather="check-circle" class="text-primary"></i>
+    <h4 class="font-semibold text-lg mt-4">Opinionated UX</h4>
+    <p class="text-slate-600 mt-2">No guesswork, proven UX patterns.</p>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how" class="bg-white py-24 border-t">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-dark">How it works</h3>
+
+    <div class="grid md:grid-cols-3 gap-10 mt-16 text-center">
+      <div>
+        <h4 class="font-semibold">1. Describe</h4>
+        <p class="text-slate-600 mt-2">Enter what kind of page you want.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">2. Generate</h4>
+        <p class="text-slate-600 mt-2">AI selects the best UI layout.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">3. Use</h4>
+        <p class="text-slate-600 mt-2">Copy & use the code instantly.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="bg-white border-t border-b py-10">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <p class="text-sm text-slate-500">Built for developers, founders & agencies</p>
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section class="max-w-7xl mx-auto px-6 py-20">
-  <h3 class="text-3xl font-bold text-center text-dark">
-    UI decisions slow teams down
-  </h3>
-  <p class="text-center text-slate-600 mt-4 max-w-2xl mx-auto">
-    Most developers and founders struggle with layout decisions, spacing,
-    component hierarchy, and consistency. Website builders add complexity instead of removing it.
-  </p>
-</section>
-
-<!-- FEATURES -->
-<section class="bg-white py-20 border-t">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-    <div class="p-6 rounded-xl border bg-slate-50">
-      <h4 class="font-semibold text-lg">Production Ready</h4>
-      <p class="text-slate-600 mt-2">
-        Clean HTML + Tailwind code you can directly use in real projects.
-      </p>
-    </div>
-    <div class="p-6 rounded-xl border bg-slate-50">
-      <h4 class="font-semibold text-lg">Opinionated UX</h4>
-      <p class="text-slate-600 mt-2">
-        Layouts follow proven UX patterns — no guessing, no chaos.
-      </p>
-    </div>
-    <div class="p-6 rounded-xl border bg-slate-50">
-      <h4 class="font-semibold text-lg">Instant Output</h4>
-      <p class="text-slate-600 mt-2">
-        From idea to UI in seconds — faster than browsing templates.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section id="how" class="max-w-7xl mx-auto px-6 py-20">
-  <h3 class="text-3xl font-bold text-center text-dark">How it works</h3>
-  <div class="grid md:grid-cols-3 gap-8 mt-12">
-    <div class="text-center">
-      <h4 class="font-semibold">1. Describe your idea</h4>
-      <p class="text-slate-600 mt-2">Enter a short description of the page you want.</p>
-    </div>
-    <div class="text-center">
-      <h4 class="font-semibold">2. Choose page type</h4>
-      <p class="text-slate-600 mt-2">Landing page, pricing, or more.</p>
-    </div>
-    <div class="text-center">
-      <h4 class="font-semibold">3. Get UI instantly</h4>
-      <p class="text-slate-600 mt-2">Preview and reuse production-ready UI.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GENERATOR -->
-<section id="generator" class="bg-white py-20 border-t">
+<!-- ================= GENERATOR ================= -->
+<section id="generator" class="py-24">
   <div class="max-w-3xl mx-auto px-6">
     <h3 class="text-3xl font-bold text-center text-dark">UI Generator</h3>
-    <p class="text-center text-slate-600 mt-3">
-      Enter a short description and generate your UI instantly.
-    </p>
 
-    <div class="mt-10 bg-slate-50 border rounded-2xl p-6">
-      <textarea id="prompt"
-        class="w-full h-24 p-4 rounded-xl border focus:ring-2 focus:ring-primary outline-none"
-        placeholder="Example: Landing page for fintech startup"></textarea>
+    <div class="mt-10 bg-white p-6 rounded-2xl shadow-md">
+      <textarea
+        id="prompt"
+        class="w-full h-24 p-4 border rounded-xl focus:ring-2 focus:ring-primary outline-none"
+        placeholder="Example: Landing page for fintech startup"
+      ></textarea>
 
       <div class="flex gap-4 mt-4">
-        <button onclick="generateLanding()"
-          class="flex-1 bg-primary text-white py-3 rounded-xl font-medium hover:bg-blue-700">
+        <button onclick="generateLanding()" class="flex-1 bg-primary text-white py-3 rounded-xl">
           Generate Landing Page
         </button>
-        <button onclick="generatePricing()"
-          class="flex-1 border border-primary text-primary py-3 rounded-xl font-medium hover:bg-blue-50">
+        <button onclick="generatePricing()" class="flex-1 border border-primary text-primary py-3 rounded-xl">
           Generate Pricing Page
         </button>
       </div>
@@ -155,20 +142,37 @@
   </div>
 </section>
 
-<!-- CTA -->
-<section class="bg-primary text-white py-16 text-center">
-  <h3 class="text-3xl font-bold">Start building better UI today</h3>
-  <p class="mt-3 text-blue-100">
-    No signup. No cost. Just clean frontend UI.
-  </p>
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="bg-white py-24 border-t">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-3xl font-bold text-dark">Contact</h3>
+      <p class="mt-4 text-slate-600">
+        Have feedback, ideas, or want to collaborate?
+      </p>
+      <p class="mt-4 text-slate-600">📧 support@uigenerator.dev</p>
+    </div>
+
+    <form class="bg-slate-50 p-6 rounded-xl border">
+      <input class="w-full p-3 border rounded-lg mb-4" placeholder="Your name" />
+      <input class="w-full p-3 border rounded-lg mb-4" placeholder="Your email" />
+      <textarea class="w-full p-3 border rounded-lg mb-4" placeholder="Message"></textarea>
+      <button class="bg-primary text-white px-6 py-3 rounded-lg">
+        Send Message
+      </button>
+    </form>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="py-10 text-center text-sm text-slate-500">
-  © 2026 UI Generator • Built for learning & real-world usage
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-slate-400 py-12 text-center">
+  <p>© 2026 UI Generator. Built by an indie developer.</p>
+  <p class="text-sm mt-2">Privacy • Terms • GitHub</p>
 </footer>
 
 <script src="app.js"></script>
+<script>feather.replace()</script>
 </body>
 </html>
+
 
