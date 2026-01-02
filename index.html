@@ -23,6 +23,19 @@
       }
     }
   </script>
+
+  <!-- Animations -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 
 <body class="bg-slate-50 text-slate-800">
@@ -34,10 +47,9 @@
       <img src="assets/logo.png" class="h-8" alt="UI Generator Logo">
       <span class="font-bold text-lg">UI Generator</span>
     </div>
-
     <nav class="hidden md:flex gap-6 text-sm font-medium">
       <a href="#features">Features</a>
-      <a href="#how">How it works</a>
+      <a href="#gallery">Gallery</a>
       <a href="#generator">Generator</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -45,89 +57,73 @@
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+<section class="fade-in max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
   <div>
-    <h1 class="text-5xl font-bold text-dark leading-tight">
+    <h1 class="text-4xl md:text-5xl font-bold text-dark leading-tight">
       AI-powered frontend <br> UI generator
     </h1>
     <p class="mt-6 text-lg text-slate-600">
       Generate production-ready frontend UI from a simple prompt.
-      No builders. No design confusion. Just clean UI.
+      No builders. No design confusion.
     </p>
 
-    <div class="mt-8 flex gap-4">
-      <a href="#generator" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+      <a href="#generator"
+        class="bg-primary text-white px-6 py-3 rounded-lg text-center
+               transition transform hover:scale-105 hover:shadow-lg">
         Try it free
       </a>
-      <a href="#how" class="px-6 py-3 rounded-lg border font-medium">
-        How it works
+      <a href="#gallery"
+        class="px-6 py-3 rounded-lg border text-center">
+        View examples
       </a>
     </div>
   </div>
 
-  <img
-    src="assets/hero-ui.png"
-    class="rounded-2xl shadow-xl"
-    alt="Generated UI Preview"
-  />
-</section>
-
-<!-- ================= TRUST ================= -->
-<section class="bg-white border-t border-b py-10 text-center text-sm text-slate-500">
-  Trusted by developers, students & early-stage startups
+  <img src="assets/hero-ui.png"
+       class="rounded-2xl shadow-xl hover:scale-105 transition"
+       alt="Generated UI Preview" />
 </section>
 
 <!-- ================= FEATURES ================= -->
-<section id="features" class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-3 gap-10">
-  <div class="bg-white p-6 rounded-xl shadow-sm">
+<section id="features" class="fade-in max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-3 gap-10">
+  <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
     <i data-feather="layout" class="text-primary"></i>
     <h4 class="font-semibold text-lg mt-4">Production Ready</h4>
-    <p class="text-slate-600 mt-2">
-      Clean HTML + Tailwind code ready for real projects.
-    </p>
+    <p class="text-slate-600 mt-2">Clean HTML + Tailwind code for real projects.</p>
   </div>
 
-  <div class="bg-white p-6 rounded-xl shadow-sm">
+  <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
     <i data-feather="zap" class="text-primary"></i>
     <h4 class="font-semibold text-lg mt-4">Instant Output</h4>
-    <p class="text-slate-600 mt-2">
-      From idea to UI in seconds.
-    </p>
+    <p class="text-slate-600 mt-2">Generate UI in seconds.</p>
   </div>
 
-  <div class="bg-white p-6 rounded-xl shadow-sm">
+  <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
     <i data-feather="check-circle" class="text-primary"></i>
     <h4 class="font-semibold text-lg mt-4">Opinionated UX</h4>
-    <p class="text-slate-600 mt-2">
-      Proven layouts that actually work.
-    </p>
+    <p class="text-slate-600 mt-2">Layouts that actually convert.</p>
   </div>
 </section>
 
-<!-- ================= HOW IT WORKS ================= -->
-<section id="how" class="bg-white py-24 border-t">
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="fade-in bg-white py-24 border-t">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center text-dark">How it works</h2>
+    <h2 class="text-3xl font-bold text-center text-dark">UI Preview Gallery</h2>
 
-    <div class="grid md:grid-cols-3 gap-10 mt-16 text-center">
-      <div>
-        <h4 class="font-semibold">1. Describe</h4>
-        <p class="text-slate-600 mt-2">Enter what kind of page you want.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">2. Generate</h4>
-        <p class="text-slate-600 mt-2">AI selects the best UI layout.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">3. Use</h4>
-        <p class="text-slate-600 mt-2">Copy and build instantly.</p>
-      </div>
+    <div class="grid md:grid-cols-2 gap-10 mt-12">
+      <img src="assets/ui-preview-1.png"
+           class="rounded-xl shadow-lg hover:scale-105 transition"
+           alt="UI Preview 1">
+      <img src="assets/ui-preview-2.png"
+           class="rounded-xl shadow-lg hover:scale-105 transition"
+           alt="UI Preview 2">
     </div>
   </div>
 </section>
 
 <!-- ================= GENERATOR ================= -->
-<section id="generator" class="py-24">
+<section id="generator" class="fade-in py-24">
   <div class="max-w-3xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-center text-dark">UI Generator</h2>
 
@@ -138,11 +134,13 @@
         placeholder="Example: Landing page for fintech startup"
       ></textarea>
 
-      <div class="flex gap-4 mt-4">
-        <button onclick="generateLanding()" class="flex-1 bg-primary text-white py-3 rounded-xl">
+      <div class="flex flex-col sm:flex-row gap-4 mt-4">
+        <button onclick="generateLanding()"
+          class="flex-1 bg-primary text-white py-3 rounded-xl transition hover:scale-105">
           Generate Landing Page
         </button>
-        <button onclick="generatePricing()" class="flex-1 border border-primary text-primary py-3 rounded-xl">
+        <button onclick="generatePricing()"
+          class="flex-1 border border-primary text-primary py-3 rounded-xl transition hover:scale-105">
           Generate Pricing Page
         </button>
       </div>
@@ -153,21 +151,21 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="bg-white py-24 border-t">
+<section id="contact" class="fade-in bg-white py-24 border-t">
   <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
     <div>
       <h3 class="text-3xl font-bold text-dark">Contact</h3>
       <p class="mt-4 text-slate-600">
-        Have feedback or ideas?
+        Feedback, ideas, or collaboration?
       </p>
       <p class="mt-4 text-slate-600">📧 support@uigenerator.dev</p>
     </div>
 
     <form class="bg-slate-50 p-6 rounded-xl border">
-      <input class="w-full p-3 border rounded-lg mb-4" placeholder="Your name" />
-      <input class="w-full p-3 border rounded-lg mb-4" placeholder="Your email" />
+      <input class="w-full p-3 border rounded-lg mb-4" placeholder="Your name">
+      <input class="w-full p-3 border rounded-lg mb-4" placeholder="Your email">
       <textarea class="w-full p-3 border rounded-lg mb-4" placeholder="Message"></textarea>
-      <button class="bg-primary text-white px-6 py-3 rounded-lg">
+      <button class="bg-primary text-white px-6 py-3 rounded-lg hover:scale-105 transition">
         Send Message
       </button>
     </form>
@@ -176,11 +174,22 @@
 
 <!-- ================= FOOTER ================= -->
 <footer class="bg-slate-900 text-slate-400 py-12 text-center">
-  <p>© 2026 UI Generator. Built as an indie SaaS.</p>
+  <p>© 2026 UI Generator • Built as an indie SaaS</p>
 </footer>
 
 <script src="app.js"></script>
-<script>feather.replace()</script>
+
+<script>
+  feather.replace();
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add("show");
+    });
+  });
+
+  document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
-
